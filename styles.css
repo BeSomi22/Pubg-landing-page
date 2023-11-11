@@ -1,0 +1,184 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion:no-preference){
+  *{
+    scroll-behavior: smooth;
+  }
+}
+
+body{
+  background-color: #2F3030;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+}
+
+header{
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ nav #logo{
+  width: 96px;
+  height: 80px;
+  margin-left: 80px;
+}
+
+.list{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 75px;
+  margin: auto;
+}
+
+.list a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.list a:hover{
+  cursor: pointer;
+  color: #f9c971;
+}
+
+.hero{
+  background-image: url('images-pubg/background-img.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+  position: relative;
+}
+
+.background-filter{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  gap:20px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-content{
+  position: relative;
+  z-index: 1;
+  width: 60%;
+  height: fit-content;
+}  
+
+.typing-animation{
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-right: 10px solid #f9c971;/*blinking cursor*/
+  white-space: nowrap;/*text in single line*/
+  font-size: 50px;
+  color: white;
+  animation: typing 20s steps(40) infinite;
+}
+
+@keyframes typing{
+  from{
+    width: 0%;
+  }
+  
+  to{
+    width: 100%;
+  }
+}
+
+.text-home{
+  color: antiquewhite;
+  font-size: 26px;
+}
+
+#rules{
+  width: 100%;
+  height: 100vh;
+}
+
+.rules-container{
+  width:90%;
+  color: #fff;
+  margin: 100px auto 20px ;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-rules{
+  text-align: center;
+  font-size: 26px;
+}
+
+.rules-container1{
+  margin-right: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+span{
+  font-size: 36px;
+  color: #f9c971;
+  font-weight: 600;
+}
+
+#about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: blanchedalmond;
+  width: 100%;
+  height: 100vh;
+}
+
+.text-about{
+  font-size: 26px;
+  text-align: center;
+  width: 50%;
+}
+
+.info {
+  color: white;
+  text-align: center;                                            
+  padding: 30px;
+}
+
+.info a {
+  text-decoration: none;
+  color: white;
+}
+
+.info a:hover{
+  color: #f9c971;
+}
